@@ -1,17 +1,17 @@
 
 /*==========Common CSS Start==========*/
 :root {
-    --primary-color: #B68C5A;
-    --primary-shadow: 0px 4px 30px -1px #CBA6724D;
-    --secondary-color: #011C1A;
+    --primary-color: #000000;
+    --primary-shadow: 0px 4px 30px -1px #ffffff4d;
+    --secondary-color: #111;
     --secondary-shadow: 0px 4px 20px -1px #011C1A33;
     --common-color: #666666;
-    --bg-color: #F4EDE7;
+    --bg-color: #ffffff;
     --gray-color: #C4C4C4;
     --white-color: #ffffff;
     --black-color: #000000;
     --yellow-color: #FFC107;
-    --dark-color: #011312;
+    --dark-color: #000000;
     --overlay-color: linear-gradient(180deg, rgba(244, 237, 231, 0) 29.7%, #F4EDE7 195.05%);
     --body-font: "Poppins", sans-serif;
     --title-font: "PT Serif", serif;
@@ -1067,7 +1067,7 @@ label {
 
 /*==========Features CSS Start==========*/
 .main-features {
-    background: var(--secondary-color);
+    background: #252525;
 }
 
 .features-list {
@@ -1147,18 +1147,11 @@ label {
 }
 
 .about-us-img {
-    width: 84.278%;
+    width: 84%;
     aspect-ratio: 1/1.34702;
     max-width: 100%;
-    --mask-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1MzYiIGhlaWdodD0iNzIyIiB2aWV3Qm94PSIwIDAgNTM2IDcyMiIgZmlsbD0ibm9uZSI+CjxtYXNrIGlkPSJtYXNrMF85Ml85MDYxIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIwIiB5PSIwIiB3aWR0aD0iNTM2IiBoZWlnaHQ9IjcyMiI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAgMEM4Ljk1NDMgMCAwIDguOTU0MzEgMCAyMFY3MDJDMCA3MTMuMDQ2IDguOTU0MzIgNzIyIDIwIDcyMkg1MTZDNTI3LjA0NiA3MjIgNTM2IDcxMy4wNDYgNTM2IDcwMlY0OTNDNTM2IDQ4MS45NTQgNTI2Ljk2OSA0NzMuMTg3IDUxNi4wOTcgNDcxLjIzN0M0NjMuNzM2IDQ2MS44NDYgNDI0IDQxNi4wNjMgNDI0IDM2MUM0MjQgMzA1LjkzNyA0NjMuNzM2IDI2MC4xNTQgNTE2LjA5NyAyNTAuNzYzQzUyNi45NjkgMjQ4LjgxMyA1MzYgMjQwLjA0NiA1MzYgMjI5VjIwQzUzNiA4Ljk1NDMgNTI3LjA0NiAwIDUxNiAwSDIwWiIgZmlsbD0iYmxhY2siLz4KPC9tYXNrPgo8ZyBtYXNrPSJ1cmwoI21hc2swXzkyXzkwNjEpIj4KPHJlY3QgeD0iLTIyNyIgeT0iLTYiIHdpZHRoPSIxMDk4IiBoZWlnaHQ9IjczMSIgZmlsbD0iYmxhY2siLz4KPC9nPgo8L3N2Zz4=");
-    -webkit-mask-image: var(--mask-image);
-    mask-image: var(--mask-image);
-    -webkit-mask-size: cover;
-    mask-size: cover;
-    -webkit-mask-position: center;
-    mask-position: center;
-    -webkit-mask-repeat: no-repeat;
-    mask-repeat: no-repeat;
+    border-radius: 11px
+    4;
 }
 
 .about-counter-box {
@@ -2282,7 +2275,7 @@ label {
 }
 
 .copy-right p a {
-    color: var(--primary-color);
+    color: var(--white-color);
     transition: 0.3s;
 }
 
