@@ -1263,7 +1263,8 @@ label {
 }
 
 .case-study-box-content .h4-title a:hover {
-    color: var(--primary-color);
+    color: var(--white-color);
+    text-decoration: underline;
 }
 
 .case-study-box-content p {
@@ -2178,7 +2179,8 @@ label {
 
 .footer-link ul li a:hover {
     opacity: 1;
-    color: var(--primary-color);
+    text-decoration: underline;
+    color: var(--white-color);
 }
 
 .footer-contact ul {
@@ -2216,7 +2218,7 @@ label {
 }
 
 .footer-contact ul li .text a:hover {
-    color: var(--primary-color);
+text-decoration: underline;
     opacity: 1;
 }
 
@@ -2379,7 +2381,7 @@ label {
 
 .breadcrumb-box ul li {
     color: var(--white-color);
-    text-transform: uppercase;
+   
     display: flex;
     align-items: center;
     font-weight: 600;
