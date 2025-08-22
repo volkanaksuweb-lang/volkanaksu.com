@@ -924,35 +924,6 @@ label {
 
 
 
-.banner-img:after {
-    content: '';
-    position: absolute;
-    top: 88px;
-    left: 50%;
-    transform: translate(-50%);
-    width: 100%;
-    aspect-ratio: 1 / 0.87108;
-    background: transparent;
-    border: 1px solid var(--primary-color);
-    border-radius: 71% 29% 34% 66% / 33% 36% 64% 67%;
-    animation: radius_animation2 5s linear infinite alternate;
-    z-index: 2;
-}
-
-@keyframes radius_animation2 {
-    0% {
-        border-radius: 71% 29% 34% 66% / 33% 36% 64% 67%;
-    }
-
-    50% {
-        border-radius: 39% 61% 49% 51% / 34% 23% 77% 66%;
-    }
-
-    100% {
-        border-radius: 71% 29% 34% 66% / 33% 36% 64% 67%;
-    }
-}
-
 .banner-img img {
     position: relative;
     z-index: 5;
@@ -1217,6 +1188,7 @@ label {
 .case-study-box {
     position: relative;
     width: 100%;
+   
     aspect-ratio: 1/1.2822;
     overflow: hidden;
 }
