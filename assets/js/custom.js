@@ -120,11 +120,11 @@ $(document).ready(function ($) {
         slidesPerView: 4,
         loop: true,
         autoplay: {
-            delay: 3000,
+            delay: 1000,
             disableOnInteraction: false,
         },
         spaceBetween: 0,
-        speed: 1500,
+        speed: 500,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

@@ -104,14 +104,14 @@ p:last-child {
     color: var(--primary-color);
     font-family: var(--title-font);
     font-weight: bold;
-    text-transform: uppercase;
+    
     display: block;
     margin-bottom: 15px;
 }
 
 .h1-title {
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 65px;
+    line-height: 70px;
     color: var(--secondary-color);
     font-weight: bold;
     font-family: var(--title-font);
@@ -156,18 +156,18 @@ p:last-child {
     width: auto;
     max-width: 100%;
     height: 60px;
-    background: var(--primary-color);
+    background: #cacaca;
     border-radius: 40px;
     font-size: 15px;
     line-height: 1.3;
-    color: var(--white-color);
+    color: #353535;
     font-weight: 600;
-    text-transform: uppercase;
+    
     overflow: hidden;
     position: relative;
     text-align: center;
     padding: 5px 34px 5px 74px;
-    box-shadow: 0px 4px 30px rgba(203, 166, 114, 0.3);
+    
     outline: none;
     border: none;
     transition: 0.5s;
@@ -649,7 +649,7 @@ label {
     font-size: 15px;
     line-height: 23px;
     color: var(--primary-color);
-    text-transform: uppercase;
+    
     font-weight: 600;
     transition: 0.3s;
 }
@@ -691,51 +691,12 @@ label {
     transform: translate(-50%, -50%);
     width: 150px;
     height: 150px;
-    background-image: url('../images/loader-center.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
+    
 }
 
-.loader:before,
-.loader:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('../images/loader-left-icon.svg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    animation: rotate_left 1.3s linear infinite alternate;
-}
 
-.loader:after {
-    background-image: url('../images/loader-right-icon.svg');
-    animation: rotate_right 1.3s linear infinite alternate;
-}
 
-@keyframes rotate_left {
-    0% {
-        transform: rotate(0deg);
-    }
 
-    100% {
-        transform: rotate(18deg);
-    }
-}
-
-@keyframes rotate_right {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(-18deg);
-    }
-}
 
 /*==========Loader CSS End==========*/
 
@@ -746,7 +707,8 @@ label {
     left: 0;
     width: 100%;
     border-bottom: 1px solid var(--gray-color);
-    padding: 26px 0;
+    padding: 16px 0;
+    background: #fff;
     transition: 0.3s;
     z-index: 100;
 }
@@ -785,7 +747,7 @@ label {
 .main-navigation ul:not(.main-navigation ul ul) {
     display: flex;
     align-items: center;
-    gap: 40px;
+    gap: 10px;
 }
 
 .main-navigation li {
@@ -793,7 +755,20 @@ label {
     line-height: 1.3;
     position: relative;
 }
+.pro-l{
+    padding: 18px 5px;
+    
+    border-bottom: 2px solid #00000050;
+    color: #000;
 
+    font-size: 18px;
+}
+.alinksw{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 50px 0;
+}
 .main-navigation li a {
     font-size: 16px;
     line-height: 1.3;
@@ -901,9 +876,22 @@ label {
 /*==========Banner CSS Start==========*/
 .main-banner {
     position: relative;
-    padding-top: 157px;
+    padding-top: 137px;
+    height: 80vh;
     background: var(--bg-color);
+    background: url(https://images.unsplash.com/photo-1637393933151-d37306ed606d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D); 
+    background-repeat: no-repeat; 
+    background-size: cover;
     overflow: hidden;
+}
+.main-banner::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #00000099;
 }
 
 .banner-content {
@@ -1628,6 +1616,7 @@ label {
     position: relative;
 }
 
+
 .team-img {
     width: 100%;
     aspect-ratio: 1/1.18302;
@@ -1642,6 +1631,7 @@ label {
     mask-repeat: no-repeat;
     -webkit-mask-repeat: no-repeat;
     margin-bottom: 23px;
+    
 }
 
 .team-img img {
@@ -1650,6 +1640,7 @@ label {
     object-fit: cover;
     object-position: center;
     transition: 0.5s;
+    
 }
 
 .team-box:hover .team-img img {
@@ -3027,6 +3018,10 @@ text-decoration: underline;
 
 .case-study-detail-box.img img {
     border-radius: 20px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover;
+    object-position: top;
 }
 
 .case-study-detail-box .h2-title {
@@ -3167,9 +3162,15 @@ text-decoration: underline;
 
 /*==========Team Detail Page CSS Start==========*/
 .main-team-detail {
+    
     margin: var(--spacing) 0;
 }
-
+.main-team-detail-container-ow{
+background: #fff;
+border: 2px solid #00000015;
+border-radius: 15px;
+padding: 15px;
+}
 .team-detail-img .team-social-share {
     width: 60px;
 }
@@ -3349,6 +3350,21 @@ text-decoration: underline;
 .blog-pagination ul li.active:not(.arrow) a {
     background: var(--primary-color);
     color: var(--white-color);
+}
+.linkCAT a{
+    padding: 15px 15px;
+    background:  #00000000;
+}
+.linkCAT a:hover{
+    padding: 15px 15px;
+    background:  #00000010;
+    border-radius: 50px;
+}
+.linkCAT.active a{
+    padding: 15px 15px;
+    background:  #000;
+    border-radius: 50px;
+    color: #fff !important;
 }
 
 .blog-pagination ul li.arrow a {
@@ -3912,7 +3928,7 @@ text-decoration: underline;
     background: var(--primary-color);
     color: var(--white-color);
     border-radius: 30px;
-    text-transform: uppercase;
+    
     transition: 0.3s;
 }
 
@@ -4538,9 +4554,23 @@ text-decoration: underline;
 
     /* Contact Us Page CSS End */
 }
+@media (max-width: 1400px) {
 
-@media screen and (max-width: 991px) {
+    .container,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+        max-width: 100% !important;
+    }
+}
+@media screen and (max-width: 1250px) {
 
+    .lang-button {
+            position: absolute !important;
+            top: 15px;
+            right: 60px;
+        }
     /* Common CSS Start */
     :root {
         --spacing: 80px;
@@ -4583,6 +4613,7 @@ text-decoration: underline;
     /* Header CSS Start */
     .site-header,
     .site-header.sticky-header {
+       
         height: 80px;
         padding: 10px 0;
     }
@@ -6149,3 +6180,34 @@ text-decoration: underline;
 }
 
 /*==========Responsive CSS End==========*/
+
+
+.lang-button a img{
+    width: 30px;
+    height: 30px;
+}
+.lang-button{
+    position: relative;
+}
+.lang-button a{
+    padding:10px;
+    color: #000;
+    text-decoration: none;
+}
+.lang-button-selector {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+   
+  
+    width: 100px;
+    background: #fff;
+    transform: scale(0);
+    box-shadow: 0 0 10px #00000010;
+}
+.lang-button-selector a:hover{
+    background: #00000010;
+}
+.lang-button:hover .lang-button-selector{
+    transform: scale(1);
+}
